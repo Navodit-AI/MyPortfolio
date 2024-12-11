@@ -1,4 +1,8 @@
+@font-face {
+    font-family: "Syne";
+    src: url(syne-font-family-1733927083-0/Syne-Bold-BF642e31d33338e.ttf);
+}
+
 h1{
-    background-color: red;
-    color: white;
+    font-family: "Syne";
 }

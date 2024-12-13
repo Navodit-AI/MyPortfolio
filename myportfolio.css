@@ -244,3 +244,61 @@ body{
     display: flex;
     height: auto;
   }
+  .contactme{
+    font-family: Syne;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #381664;
+    margin-top: 200px;
+
+  }
+  .info{
+    font-family: Familjen Grotesk;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #381664;
+
+  }
+  .input{
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px;
+    margin:8px 16px;
+    color: #381664;
+    border: 1px solid #440A8F;
+    background-color: #FFFFFF;
+    font-family: Familjen Grotesk;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+  .inputin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:30px ;
+  }
+  .send{
+    border-radius: 8px;
+    font-family: space mono;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    color:#FCFAFF ;
+    background-color:#440A8F ;
+    text-align: center;
+    width: Fill (400px)px;
+    padding: 8px 16px 8px 16px;
+    gap: 0px;
+
+
+   
+
+
+
+  }

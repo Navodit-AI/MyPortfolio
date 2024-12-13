@@ -2,7 +2,245 @@
     font-family: "Syne";
     src: url(syne-font-family-1733927083-0/Syne-Bold-BF642e31d33338e.ttf);
 }
-
-h1{
-    font-family: "Syne";
+@font-face {
+    font-family: "familjen Grotesk";
+    src: url(familjen-grotesk/fonts/ttf/FamiljenGroteskGF-Regular.ttf);
 }
+@font-face {
+    font-family: "space mono";
+    src: url(space-mono/SpaceMono-Bold.ttf);
+}
+
+body{
+    margin: 0 20px;
+    width: auto;
+    background-color: #ECF6FE;
+  }
+  
+  .navbar{
+    height: 60px;
+    width: auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .header-title{
+    font-family: "Syne";
+    font-size: 25px;
+    cursor: default;
+    color: #381664;
+    
+  }
+  
+  .header-buttons{
+    display: flex;
+    font-family: "Syne";
+    margin: 5px;
+    color:#381664;
+  }
+  
+  .btn{
+    margin: 5px;
+    padding: 3px 6px;
+    border-radius: 5px;
+  }
+  .divider{
+    margin: 0;
+    height: 1px;
+    background-color:#440A8F;
+    
+  }
+  .title-head{
+    font-family: "Syne";
+    font-size: 120px;
+    font-weight: 700;
+    word-wrap: break-word;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    color:#381664;
+  }
+  
+  .title-image{
+    width:100%;
+    height:auto;
+    align-self: center;
+    margin-bottom: 96px;
+    border-radius: 28px;
+    border: 1px solid #440A8F;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 48px;
+    margin-bottom: 48px;
+  }
+  
+  .grid-img{
+    height: auto;
+    width: 100%;
+    border:1px solid #440A8F;
+  }
+  .cap{
+    font-family: Familjen Grotesk;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color:#381664;
+
+  }
+  .des{
+    font-family: Familjen Grotesk;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color:#381664;
+
+  }
+  .captioned-image .cap-img{
+    border: 1px solid#440A8F;
+    align-self: center;
+    width: 100%;
+    height: auto;
+
+  }
+  .caption{
+    font-family: Familjen Grotesk;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color:#381664 ;
+    
+  }
+  .captioned-image{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    gap: 12px;
+  }
+  .dot{
+    width: 6px;
+    height: 6px;
+    opacity: 0px;
+    color:#381664;
+    letter-spacing: 18px;
+    margin-bottom: 12px;
+
+  }
+  .reviews{
+    margin-top:  48px;
+    margin-bottom: 48px;
+    gap: 48px;
+  }
+  .ques{
+    font-family: Syne;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #381664;
+    margin-top: 24px;
+  }
+  .cards{
+    display: flex;
+    gap: 48px;
+    margin-bottom: 48px;
+  }
+  .prof{
+    display: flex;
+    align-items: center;
+  }
+  .card1{
+    border: 1px solid #440A8F;
+    background-color: #FFFFFF;
+    padding: 24px;
+    gap: 16px;
+    border-radius: 16px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
+
+
+  }
+
+  .card2{
+    border: 1px solid #440A8F;
+    background-color: #FFFFFF;
+    padding: 24px;
+    gap: 16px;
+    border-radius: 16px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+  }
+  .card3{
+    border: 1px solid #440A8F;
+    background-color: #FFFFFF;
+    padding: 24px;
+    gap: 16px;
+    border-radius: 16px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+  }
+  .card4{
+    border: 1px solid #440A8F;
+    background-color: #FFFFFF;
+    padding: 24px;
+    gap: 16px;
+    border-radius: 16px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+  }
+
+  .profile{
+    border-radius: 999px;
+    border: 1px solid #440A8F;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    margin-right: 20px;
+  }
+  .Name{
+    font-family: Familjen Grotesk;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    color: #381664;
+  }
+  .Position{
+    font-family: Familjen Grotesk;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #381664;
+
+  }
+  .description{
+    font-family: Familjen Grotesk;
+    font-size: 20px;
+    font-weight:400;
+    line-height: 24px;
+    text-align: left;
+    color:#6C49B8;
+    margin-left: 20px;
+
+  }
+  .line{
+    border: 1px solid #440A8F;
+    margin-left: 25px;
+
+  }
+  .prof2{
+    display: flex;
+    height: auto;
+  }

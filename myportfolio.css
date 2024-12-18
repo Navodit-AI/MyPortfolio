@@ -244,7 +244,7 @@ body{
     display: flex;
     height: auto;
   }
-  .contactme{
+  .contact{
     font-family: Syne;
     font-size: 28px;
     font-weight: 700;
@@ -253,6 +253,7 @@ body{
     text-align: center;
     color: #381664;
     margin-top: 200px;
+    gap: 32px;
 
   }
   .info{
@@ -264,10 +265,10 @@ body{
     color: #381664;
 
   }
-  .input{
+  /* .input{
     padding: 8px 16px 8px 16px;
     border-radius: 8px;
-    margin:8px 16px;
+    margin:8px 16px;d
     color: #381664;
     border: 1px solid #440A8F;
     background-color: #FFFFFF;
@@ -292,13 +293,115 @@ body{
     color:#FCFAFF ;
     background-color:#440A8F ;
     text-align: center;
-    width: Fill (400px)px;
+    width: auto;
     padding: 8px 16px 8px 16px;
-    gap: 0px;
+    margin-bottom: 25px;
+  }
+  .skip{
+    font-family: Space Mono;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #381664;
+    text-align: center;
+
+
+  } */
+
+
+  .contact h1{
+  font-family: Syne;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color:#381664
+
+  }
+  .contact p{
+    font-family: Familjen Grotesk;
+    font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  
+
+  }
+  .input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.digit-input {
+    width: 56px;
+    height: 64px;
+    border: 1px solid #4C247C;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.5rem;
+    color:#381664;
+    outline: none;
+    transition: all 0.3s;
+    padding: 8px 16px 8px 16px;
+    margin-bottom: 40px;
+
+
+}
+
+.digit-input:focus {
+    border-color: #6A1B9A;
+    box-shadow: 0 0 5px #6A1B9A;
+}
+
+/* Send Button */
+.send{
+    background-color: #4C247C;
+    color: #FCFAFF;
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+    font-family: Space Mono;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  width: 400px;
+  height: 36px;
+  padding: 8px 16px 8px 16px;
+  gap: 0px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+
+
+}
+
+.send:hover {
+    background-color: #6A1B9A;
+}
+
+
+.skip{
+    font-family: Space Mono;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align:center;
+    text-decoration-skip-ink: none;    
+    transition: color 0.3s;
+    color: #381664;
+}
+
+.skip:hover {
+    color: #4C247C;
+}
 
 
    
 
 
 
-  }
+

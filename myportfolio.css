@@ -16,6 +16,9 @@ body{
     width: auto;
     background-color: #ECF6FE;
   }
+  header, main, footer {
+    width: 100%;
+}
   
   .navbar{
     height: 60px;
@@ -24,6 +27,7 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 0 10px;
+  
   }
   
   .header-title{
@@ -393,11 +397,59 @@ body{
     text-decoration-skip-ink: none;    
     transition: color 0.3s;
     color: #381664;
+    margin-bottom: 100px;
+    text-decoration: none;
 }
 
 .skip:hover {
     color: #4C247C;
 }
+.footer{
+  width: 1344px;
+height: 168px;
+padding: 96px 0px 24px 0px;
+gap: 24px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.copyright{
+  font-family: Syne;
+font-size: 28px;
+font-weight: 500;
+line-height: 32px;
+letter-spacing: -0.01em;
+color: #381664;
+
+}
+.follow{
+  border: 1px solid #440A8F;
+  width: Hug (159px)px;
+height: Hug (48px)px;
+padding: 12px 24px 12px 24px;
+gap: 0px;
+border-radius: 8px;
+color: #381664;
+font-family: Space Mono;
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+font-style: normal;
+text-decoration: none;
+}
+.follow:hover {
+  background-color: #4C247C;
+  color: #FFFFFF;
+}
+
 
 
    

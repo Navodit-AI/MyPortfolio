@@ -1,7 +1,18 @@
 @font-face {
     font-family: "Syne";
-    src: url(syne-font-family-1733927083-0/Syne-Bold-BF642e31d33338e.ttf);
+    src: url(syne-font-family-1733927083-0/Syne-Extra-BF642e31d32a227.otf);
 }
+
+@font-face {
+  font-family: "Syne-Regular";
+  src: url(syne-font-family-1733927083-0/Syne-Regular-BF642e31d37a538.ttf);
+}
+
+@font-face {
+  font-family: "Syne-Bold";
+  src: url(syne-font-family-1733927083-0/Syne-Bold-BF642e31d33338e.ttf);
+}
+
 @font-face {
     font-family: "familjen Grotesk";
     src: url(familjen-grotesk/fonts/ttf/FamiljenGroteskGF-Regular.ttf);
@@ -15,6 +26,7 @@ body{
     margin: 0 20px;
     width: auto;
     background-color: #ECF6FE;
+
   }
   
   .navbar{
@@ -24,49 +36,46 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    margin-bottom: 20px;
   }
   
   .header-title{
-    width: 100%;
-    height: auto;
-    font-family: "Syne";
-    cursor: default;
+    font-family: Syne;
+    font-size: 2.5vw;
+    font-weight: 800;
+    line-height: 42px;
+    letter-spacing: -0.04em;
     color: #381664;
-
   }
   
   .header-buttons{
-    width: 100%;
-    height: auto;
     display: flex;
-    font-family: "Syne";
-    gap: 10px;
+    font-family:Syne-Regular;
+    margin: 5px;
     color:#381664;
+    flex-wrap: wrap;
+    font-size: 1.85vw;
   }
   
   .btn{
     margin: 5px;
     padding: 3px 6px;
     border-radius: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
   }
   .divider{
-    margin: 0;
+    margin: 3px;
     height: 1px;
     background-color:#440A8F;
     
   }
   .title-head{
-    font-family: "Syne";
-    font-size: 100px;
+    font-family: Syne-Bold;
+    font-size: 8vw;
     font-weight: 700;
     text-align: center;
     height: auto;
     width: 100%;
     color:#381664;
+    
   }
   
   .title-image{
@@ -76,8 +85,8 @@ body{
     margin-bottom: 96px;
     border-radius: 28px;
     border: 1px solid #440A8F;
+    justify-content: center;
   }
-  
   .grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -90,7 +99,6 @@ body{
     width: 100%;
     border:1px solid #440A8F;
   }
-
   .cap{
     font-family: Familjen Grotesk;
     font-size: 20px;
@@ -113,7 +121,6 @@ body{
     color:#381664;
 
   }
-
   .captioned-image .cap-img{
     border: 1px solid#440A8F;
     align-self: center;
@@ -174,38 +181,7 @@ body{
     display: flex;
     align-items: center;
   }
-  .card1{
-    border: 1px solid #440A8F;
-    background-color: #FFFFFF;
-    padding: 24px;
-    gap: 16px;
-    border-radius: 16px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
-
-
-
-  }
-
-  .card2{
-    border: 1px solid #440A8F;
-    background-color: #FFFFFF;
-    padding: 24px;
-    gap: 16px;
-    border-radius: 16px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
-  }
-  .card3{
-    border: 1px solid #440A8F;
-    background-color: #FFFFFF;
-    padding: 24px;
-    gap: 16px;
-    border-radius: 16px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
-  }
-  .card4{
+  .client-card{
     border: 1px solid #440A8F;
     background-color: #FFFFFF;
     padding: 24px;
@@ -216,10 +192,10 @@ body{
   }
 
   .profile{
-    border-radius: 999px;
+    border-radius: 50%;
     border: 1px solid #440A8F;
-    width: 48px;
-    height: 48px;
+    width: 12%;
+    height: auto;
     display: flex;
     margin-right: 20px;
   }
@@ -411,12 +387,94 @@ line-height: 24px;
 font-style: normal;
 text-decoration: none;
 }
-
 .follow:hover {
   background-color: #4C247C;
   color: #FFFFFF;
 }
+@media (max-width: 1024px) {
+  .title-head {
+    font-size: 60px;
+  }
 
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cards {
+    gap: 16px;
+  }
+
+  .footer {
+    padding: 16px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  body {
+    margin: 0 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .header-buttons {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .header-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .title-head {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    padding: 12px;
+  }
+
+  .send {
+    width: 100%;
+  }
+
+  .footer {
+    text-align: center;
+  }
+}
+
+/* Very small devices */
+@media (max-width: 480px) {
+  .title-head {
+    font-size: 30px;
+  }
+
+  .grid {
+    grid-template-columns:repeat(3,1fr);
+    gap: 12px;
+  }
+
+  .send {
+    font-size: 12px;
+  }
+
+  .copyright {
+    font-size: 16px;
+  }
+}
 
 
 

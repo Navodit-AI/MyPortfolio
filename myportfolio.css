@@ -16,32 +16,32 @@ body{
     width: auto;
     background-color: #ECF6FE;
   }
-  header, main, footer {
-    width: 100%;
-}
   
   .navbar{
-    height: 60px;
+    height: 100%;
     width: auto;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 10px;
-  
+    margin: 0;
+    margin-bottom: 20px;
   }
   
   .header-title{
+    width: 100%;
+    height: auto;
     font-family: "Syne";
-    font-size: 25px;
     cursor: default;
     color: #381664;
-    
+
   }
   
   .header-buttons{
+    width: 100%;
+    height: auto;
     display: flex;
     font-family: "Syne";
-    margin: 5px;
+    gap: 10px;
     color:#381664;
   }
   
@@ -49,6 +49,9 @@ body{
     margin: 5px;
     padding: 3px 6px;
     border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
   }
   .divider{
     margin: 0;
@@ -58,9 +61,8 @@ body{
   }
   .title-head{
     font-family: "Syne";
-    font-size: 120px;
+    font-size: 100px;
     font-weight: 700;
-    word-wrap: break-word;
     text-align: center;
     height: auto;
     width: 100%;
@@ -75,9 +77,10 @@ body{
     border-radius: 28px;
     border: 1px solid #440A8F;
   }
+  
   .grid{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 48px;
     margin-bottom: 48px;
   }
@@ -87,6 +90,7 @@ body{
     width: 100%;
     border:1px solid #440A8F;
   }
+
   .cap{
     font-family: Familjen Grotesk;
     font-size: 20px;
@@ -109,6 +113,7 @@ body{
     color:#381664;
 
   }
+
   .captioned-image .cap-img{
     border: 1px solid#440A8F;
     align-self: center;
@@ -143,6 +148,12 @@ body{
     margin-top:  48px;
     margin-bottom: 48px;
     gap: 48px;
+  }
+  .reviews .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
   }
   .ques{
     font-family: Syne;
@@ -269,49 +280,6 @@ body{
     color: #381664;
 
   }
-  /* .input{
-    padding: 8px 16px 8px 16px;
-    border-radius: 8px;
-    margin:8px 16px;d
-    color: #381664;
-    border: 1px solid #440A8F;
-    background-color: #FFFFFF;
-    font-family: Familjen Grotesk;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-  }
-  .inputin{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom:30px ;
-  }
-  .send{
-    border-radius: 8px;
-    font-family: space mono;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 20px;
-    color:#FCFAFF ;
-    background-color:#440A8F ;
-    text-align: center;
-    width: auto;
-    padding: 8px 16px 8px 16px;
-    margin-bottom: 25px;
-  }
-  .skip{
-    font-family: Space Mono;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 20px;
-    color: #381664;
-    text-align: center;
-
-
-  } */
-
 
   .contact h1{
   font-family: Syne;
@@ -397,7 +365,6 @@ body{
     text-decoration-skip-ink: none;    
     transition: color 0.3s;
     color: #381664;
-    margin-bottom: 100px;
     text-decoration: none;
 }
 
@@ -405,13 +372,14 @@ body{
     color: #4C247C;
 }
 .footer{
-  width: 1344px;
-height: 168px;
-padding: 96px 0px 24px 0px;
-gap: 24px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  margin-top: 200px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+
+
 
 
 }
@@ -432,8 +400,6 @@ color: #381664;
 }
 .follow{
   border: 1px solid #440A8F;
-  width: Hug (159px)px;
-height: Hug (48px)px;
 padding: 12px 24px 12px 24px;
 gap: 0px;
 border-radius: 8px;
@@ -445,10 +411,12 @@ line-height: 24px;
 font-style: normal;
 text-decoration: none;
 }
+
 .follow:hover {
   background-color: #4C247C;
   color: #FFFFFF;
 }
+
 
 
 
